@@ -1,12 +1,15 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --backround-color: #c6e9f1;
+  --primary-color: #65d2ee;
+  --font-text: "playfair display", sans-serif;
+  --box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  --font-body: font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
-  margin: 60px auto;
-  max-width: 800px;
+  font-family: var(--font-body);
+  
 }
 
 h1,
@@ -30,62 +33,74 @@ h3 {
 }
 
 p {
-  background: var(--secondary-color);
-  padding: 20px;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 1.5;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+
+.hero {
   text-align: center;
+  background: var(--backround-color);
+  padding: 90px 20px;
+}
+.hero h2 {
+  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
 }
 
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
+.hero h1 {
+  font-family: var(--font-text);
+  font-size: 96px;
+  color: var(--primary-color);
 }
 
-.navigation-links a {
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
+.hero h3 {
+  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
 }
-
-.contact-link {
+.button-link {
   background: var(--primary-color);
-  box-shadow: var(--box-shadow);
+  border-radius: 4px;
   color: white;
-}
-
-.about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
-.about-paragraphs {
-  display: flex;
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 18px 30px;
   text-decoration: none;
 }
+@media (min-width: 800px) {
+  .hero h1 {
+    font-size: 50px;}
 
-.email-link:hover {
-  text-decoration: underline;
+  .social-media a {
+    display: flex;
+  
+  justify-content: center;
+	padding: 0 8px;
+  
 }
+
+.contact-box {
+  background-color: var(--backround-color);
+  padding: 17px 20px;
+  margin: 20px 25px;
+  border-radius: 20px;
+}
+.footer-index {
+  font-size: small;
+  padding-top: 6px;
+  line-height: 15px;
+  color: black;
+  text-decoration: none;
+}
+.footer-git {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.contact-box {
+  background-color: var(--backround-color);
+  padding: 90px 20px;
+  border-radius: 20px;}
