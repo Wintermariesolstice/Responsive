@@ -1,5 +1,5 @@
 :root {
-  --backround-color: #c6e9f1;
+  --backround-color:#c6e9f1;
   --primary-color: #65d2ee;
   --font-text: "playfair display", sans-serif;
   --box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -70,22 +70,24 @@ p {
   padding: 18px 30px;
   text-decoration: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 800px) 
+{
   .hero h1 {
-    font-size: 50px;}}
+    font-size: 50px;}}  
 
   .social-media a {
     display: flex;
   
   justify-content: center;
 	padding: 0 8px;
-  
+  text-decoration: none;
 }
 
 .contact-box {
   background-color: var(--backround-color);
-  padding: 17px 20px;
-  margin: 20px 25px;
+  padding: 20px 120px;
+  margin-left: 120px;
+  margin-right: 120px;
   border-radius: 20px;
 }
 .footer-index {
@@ -100,7 +102,3 @@ p {
   text-decoration: none;
   font-weight: bolder;
 }
-.contact-box {
-  background-color: var(--backround-color);
-  padding: 90px 20px;
-  border-radius: 20px;}
